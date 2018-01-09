@@ -4,7 +4,7 @@ import os
 from confluent_kafka import Producer
 
 if __name__ == '__main__':
-    topic = "%s.test" % os.environ['CLOUDKARAFKA_TOPIC_PREFIX']
+    topic = "%s" % os.environ['CLOUDKARAFKA_TOPIC_PREFIX']
 
     # Consumer configuration
     # See https://github.com/edenhill/librdkafka/blob/master/CONFIGURATION.md

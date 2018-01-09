@@ -13,8 +13,8 @@ Configuration
   Username can be found in the Details view in for your CloudKarafka instance.
 * `export CLOUDKARAFKA_PASSWORD="password"`
   Password can be found in the Details view in for your CloudKarafka instance.
-* `export CLOUDKARAFKA_TOPIC_PREFIX="same_as_username"`
-  Topic prefix should be the same as your username.
+* `export CLOUDKARAFKA_TOPIC_PREFIX="username-topic"`
+  Topic prefix should be the same as your username followed by a dash before the topic.
 
 These export commands must be run in both of the terminal windows below.
 
@@ -26,3 +26,4 @@ python consumer.py
 ```
 
 Open another terminal window and `cd` into same directory and run `python producer.py`.
+Send your messages by pressing your system's EOF key sequence. (ctrl-d in bash)
