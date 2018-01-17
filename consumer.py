@@ -4,7 +4,7 @@ import os
 from confluent_kafka import Consumer, KafkaException, KafkaError
 
 if __name__ == '__main__':
-    topics = ["%s" % os.environ['CLOUDKARAFKA_TOPIC_PREFIX']]
+    topics = ["%s" % os.environ['CLOUDKARAFKA_TOPIC']]
 
     # Consumer configuration
     # See https://github.com/edenhill/librdkafka/blob/master/CONFIGURATION.md
