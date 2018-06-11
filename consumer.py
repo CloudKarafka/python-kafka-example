@@ -10,7 +10,7 @@ if __name__ == '__main__':
     # See https://github.com/edenhill/librdkafka/blob/master/CONFIGURATION.md
     conf = {
         'bootstrap.servers': os.environ['CLOUDKARAFKA_BROKERS'],
-        'group.id': "cloudkarafka-example",
+        'group.id': "%s-consumer" % os.environ['CLOUDKARAFKA_USERNAME'],
         'session.timeout.ms': 6000,
         'default.topic.config': {'auto.offset.reset': 'smallest'},
         'security.protocol': 'SASL_SSL',
